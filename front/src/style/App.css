@@ -7,9 +7,14 @@ li{
   position: fixed;
   width: 100%;
   display: grid;
+  top: 0;
+  left: 0;
 }
 .headerPage h1{
   text-align: center;
+}
+.headerPage input{
+  text-align: left;
 }
 
 .card-container {
@@ -27,6 +32,10 @@ li{
   margin: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+}
+
+.card button{
+  float: right;
 }
 
 .card:hover {
