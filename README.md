@@ -1,5 +1,3 @@
-# mern_pokedex
-
 # TP : Pokedex Etrange
 
 # Question :
