@@ -54,14 +54,14 @@ function App() {
 
       <div className="card-container">
         {filteredData.map(pokemon => (
-          <div className="card" key={pokemon.id}>
+          <div className={`card ${pokemon.type[0]?.toLowerCase()}`} key={pokemon.id}>
             <button onClick={() => handleDeleteClick(pokemon.id, pokemon.name)}>X</button>
             <div className="card-body">
               <h2 className="card-title">N°{pokemon.id} - {isEnglish ? `🇬🇧 ${pokemon.name.english}` : `🇫🇷 ${pokemon.name.french}`}</h2>
               <h5>🇯🇵 {pokemon.name.japanese} | 🇨🇳 {pokemon.name.chinese} | {isEnglish ? `🇫🇷 ${pokemon.name.french}` : `🇬🇧 ${pokemon.name.english}`}</h5>
               <li className="card-subtitle">Type:
                 {pokemon.type.map(type => (
-                  <span className={`typeShape ${type.toLowerCase()}`} key={type}> {type} </span>
+                  <p className={`typeShape ${type.toLowerCase()}`} key={type}>{type}</p>
                 ))}
               </li>
               <ul className="card-text">

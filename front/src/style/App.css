@@ -1,5 +1,6 @@
 li{
   list-style: none;
+  display: flex;
 }
 
 .headerPage{
@@ -36,10 +37,6 @@ li{
 
 .card button{
   float: right;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgb(191, 191, 191);
 }
 
 .cardContainer-img{

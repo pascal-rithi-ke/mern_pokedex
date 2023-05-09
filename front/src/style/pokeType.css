@@ -1,5 +1,8 @@
 .typeShape{
     border-radius: 10px;
+    border: 1px solid #eee;
+    width: 65px;
+    text-align: center;
 }
 
 .grass {
